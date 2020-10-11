@@ -37,10 +37,13 @@ public interface MainGUI {
         layout.setHgap(10);
         layout.setVgap(10);
 
+        /*pricePanel includes fields that provides users to add money and cancel the process*/
         JPanel pricePanel = new JPanel(new BorderLayout());
         pricePanel.setBackground(Color.LIGHT_GRAY);
         mainFrame.add(pricePanel, BorderLayout.CENTER);
 
+        /*priceEnter panel includes the text area that user can enter the amount of money they want to add*/
+        /*buttonsPanel includes the buttons which are enterButton and cancelButton*/
         JPanel priceEnter = new JPanel(new FlowLayout());
         priceEnter.setBackground(Color.LIGHT_GRAY);
         JPanel buttonsPanel = new JPanel(new FlowLayout());
@@ -68,6 +71,7 @@ public interface MainGUI {
         buttonsPanel.add(cancelButton);
         infoPanel.add(infoField);
 
+        /*balancePanel includes field that shows the balance of the user*/
         JPanel balancePanel = new JPanel(new FlowLayout());
         balancePanel.setBackground(Color.GRAY);
         mainFrame.add(balancePanel, BorderLayout.EAST);
@@ -86,6 +90,7 @@ public interface MainGUI {
         balancePanel.add(balanceField);
         balancePanel.add(unit2);
 
+        /*goodsPanel includes the items of the vending machine*/
         JPanel goodsPanel = new JPanel(layout);
         goodsPanel.setBackground(Color.GRAY);
         mainFrame.add(goodsPanel, BorderLayout.WEST);
@@ -94,6 +99,9 @@ public interface MainGUI {
         goodsPanel.add(fantaButton);
         goodsPanel.add(sodaButton);
 
+        /*deliveryPanel includes two fields these are
+        information text area (messageField) and
+        a text area that shows the user which item did they buy (deliveryField)*/
         JPanel deliveryPanel = new JPanel(new GridLayout(3, 1));
         deliveryPanel.setBackground(Color.BLACK);
         mainFrame.add(deliveryPanel, BorderLayout.SOUTH);

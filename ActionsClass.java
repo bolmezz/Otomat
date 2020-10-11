@@ -11,6 +11,7 @@ public class ActionsClass implements MainGUI {
 
     static void buttonActions() throws InterruptedException {
 
+        /*cokeButton's color changes when the mouse on it*/
         cokeButton.addMouseListener(new MouseAdapter() {
             Color colorB = cokeButton.getBackground();
             Color colorF = cokeButton.getForeground();
@@ -28,6 +29,7 @@ public class ActionsClass implements MainGUI {
             }
         });
 
+        /*fantaButton's color changes when the mouse on it*/
         fantaButton.addMouseListener(new MouseAdapter() {
             Color colorB = fantaButton.getBackground();
             Color colorF = fantaButton.getForeground();
@@ -45,6 +47,7 @@ public class ActionsClass implements MainGUI {
             }
         });
 
+        /*sodaButton's color changes when the mouse on it*/
         sodaButton.addMouseListener(new MouseAdapter() {
             Color colorB = sodaButton.getBackground();
             Color colorF = sodaButton.getForeground();
